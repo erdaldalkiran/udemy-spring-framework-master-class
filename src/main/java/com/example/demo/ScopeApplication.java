@@ -21,7 +21,7 @@ public class ScopeApplication {
         var personDOA = context.getBean(PersonDOA.class);
         var personDOA2 = context.getBean(PersonDOA.class);
 
-        LOGGER.info("{}", personDOA); 
+        LOGGER.info("{}", personDOA);
         LOGGER.info("{}", personDOA.getJdbcConnection());
         LOGGER.info("{}", personDOA.getJdbcConnection());
 
