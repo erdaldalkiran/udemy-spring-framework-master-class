@@ -1,13 +1,15 @@
 package com.example.demo;
 
+import com.example.demo.basic.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class BasicApplication {
 
     public static void main(String[] args) {
-        var context = SpringApplication.run(DemoApplication.class, args);
+
+        var context = SpringApplication.run(BasicApplication.class, args);
         System.out.println();
         System.out.println();
         System.out.println();
@@ -25,6 +27,7 @@ public class DemoApplication {
         var result = searcher.search(new int[]{1, 2, 3, 4}, 3);
 
         System.out.println("=====> " + result + " <=====");
+        System.out.println("basic");
     }
 
 }
