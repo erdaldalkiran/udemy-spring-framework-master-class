@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ciko</title>
+</head>
+<body>
+<p style="color: red; " th:text="${errorMessage}"></p>
+<form action="/login" method="post">
+    Name: <input type="text" name="name" />
+    <br/>
+    Password: <input type="password" name="password"/>
+    <br/>
+    <input type="submit" value="login"/>
+</form>
+</body>
+</html>
