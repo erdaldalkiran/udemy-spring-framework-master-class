@@ -11,11 +11,11 @@ public class BookController {
 
     @GetMapping("/books")
     public List<Book> getBooks() {
-        return Arrays.asList(new Book[]{
+        return Arrays.asList(
                 new Book(1, "name", "author"),
-                new Book(2, "kara kapli defter", "necati enistem"),
+                new Book(2, "kara kapli defter", "necati enistem")
 //                new Book(3, "ciko", "ciko tanesi")
-        });
+        );
     }
 
 }
